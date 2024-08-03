@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "tinybird"
+
+require "pry"
+Pry.start
