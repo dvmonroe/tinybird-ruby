@@ -13,6 +13,12 @@ module Tinybird
       make_request(request)
     end
 
+    def post(body, headers = {})
+      request = Net::HTTP::Post.new(uri, headers)
+      request.body = body.to_json
+      make_request(request)
+    end
+
     private
 
     def make_request(request)

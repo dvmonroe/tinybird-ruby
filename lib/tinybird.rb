@@ -13,6 +13,8 @@ require "tinybird/callable"
 require "tinybird/requestable"
 
 require "tinybird/query"
+require "tinybird/event"
+
 module Tinybird
   class Error < StandardError; end
 
